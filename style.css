@@ -1,43 +1,69 @@
-/* General Reset */
+/* Reset and base styling */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-/* Body */
 body {
-    font-family: Arial, sans-serif;
-    line-height: 1.6;
-    background-color: #f4f4f4;
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(135deg, #74ebd5, #ACB6E5);
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px;
     color: #333;
-    padding: 20px;
+}
+
+/* Container */
+.container {
+    background: #fff;
+    border-radius: 20px;
+    padding: 30px 40px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+    max-width: 600px;
+    width: 100%;
 }
 
 /* Header */
 header {
-    background-color: #0077cc;
-    color: white;
-    padding: 20px 0;
     text-align: center;
-    border-radius: 10px;
-    margin-bottom: 20px;
+    margin-bottom: 30px;
 }
 
 header h1 {
+    font-size: 2.5rem;
+    color: #333;
     margin-bottom: 10px;
 }
 
-/* Section */
-section {
-    background: white;
-    padding: 20px;
-    margin-bottom: 20px;
-    border-radius: 10px;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+header p {
+    font-size: 1.2rem;
+    color: #666;
 }
 
-/* Lists */
+/* Cards */
+.card {
+    background: #f9f9f9;
+    border-radius: 15px;
+    padding: 20px;
+    margin-bottom: 20px;
+    transition: transform 0.3s, background 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    background: #eef2f3;
+}
+
+.card h2 {
+    font-size: 1.8rem;
+    margin-bottom: 15px;
+    color: #444;
+}
+
+/* List */
 ul {
     list-style: none;
 }
@@ -45,17 +71,26 @@ ul {
 ul li {
     padding: 10px 0;
     border-bottom: 1px solid #ddd;
+    font-size: 1rem;
 }
 
 ul li:last-child {
     border-bottom: none;
 }
 
+ul li a {
+    color: #0077cc;
+    text-decoration: none;
+}
+
+ul li a:hover {
+    text-decoration: underline;
+}
+
 /* Footer */
 footer {
     text-align: center;
-    padding: 10px;
     margin-top: 20px;
-    font-size: 14px;
+    font-size: 0.9rem;
     color: #555;
 }
